@@ -1,30 +1,30 @@
 using System;
 
 public abstract class Employee {
-	private String ssNo;
-	private String name;
-	private String email;
-	protected static_int counter;
 
-	public int GetSsNo() {
-		throw new System.NotImplementedException("Not implemented");
-	}
-	public void SetSsNo(ref int ssNo) {
-		throw new System.NotImplementedException("Not implemented");
-	}
-	public String GetName() {
-		return this.name;
-	}
-	public void SetName(ref String name) {
-		this.name = name;
-	}
-	public String GetEmail() {
-		return this.email;
-	}
-	public void SetEmail(ref String email) {
-		this.email = email;
-	}
+    protected int ssNo;
+    protected string name;
+    protected string email;
+	protected int counter;
 
-	private Faculty leads;
-
+	public int SsNo
+	{
+		get { return ssNo; }
+		set { ssNo = value; }
+	}
+	public string Name
+	{
+		get { return name; }
+		set { name = value; }
+	}
+	public string Email
+	{
+		get { return email; }
+		set { email = value; }
+	}
+	public int Counter
+	{
+		get { return counter; }
+		set { counter = value; }
+	}
 }
