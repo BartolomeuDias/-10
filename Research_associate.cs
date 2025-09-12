@@ -1,6 +1,6 @@
 using System;
 
-public class Research_associate : Employee  {
+public class ResearchAssociate : Employee  {
 	private String fieldOfStudy;
 	private Project projects;
 

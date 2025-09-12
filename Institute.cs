@@ -1,40 +1,36 @@
 using System;
 
 public class Institute {
-	private String name;
-	private String address;
-	private ResearchAssociate employees;
 
-	public String GetName() {
-		return this.name;
+	private string name;
+	private string address;
+	private List<ResearchAssociate> employees;
+
+    public Institute(string name, string address)
+    {
+		Name = name;
+		Address = address;
+    }
+	public string Name
+	{
+		get { return name; }
+		set { name = value; }
 	}
-	public void SetName(ref String name) {
-		this.name = name;
+	public string Address
+    {
+		get { return address; }
+		set { address = value; }
 	}
-	public String GetAddress() {
-		return this.address;
+	public List<ResearchAssociate> GetEmployees() {
+		return employees;
 	}
-	public void SetAddress(ref String address) {
-		this.address = address;
-	}
-	public ResearchAssociate GetEmployees() {
-		return this.employees;
-	}
-	public void SetEmployees(ref ResearchAssociate employees) {
+	public void SetEmployees(List<ResearchAssociate> employees) {
 		this.employees = employees;
 	}
-	public void HireEmployee(ref ResearchAssociate employee) {
+	public void HireEmployee(ResearchAssociate employee) {
 		throw new System.NotImplementedException("Not implemented");
 	}
-	public void FireEmployee(ref ResearchAssociate employee) {
+	public void FireEmployee(ResearchAssociate employee) {
 		throw new System.NotImplementedException("Not implemented");
 	}
-	public Institute(ref String name, ref String address) {
-		throw new System.NotImplementedException("Not implemented");
-	}
-
-	private Faculty faculty;
-
-	private Research_associate[] research_associates;
-
 }
