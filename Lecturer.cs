@@ -1,22 +1,20 @@
 using System;
 
-public class Lecturer : Research_associate  {
-	private Course courses;
+public class Lecturer : ResearchAssociate  {
+	private List<Course> courses;
+    public Lecturer(int ssNo, string name, string email, string fieldOfStudy):base(ssNo, name, email, fieldOfStudy)
+    {
 
-	public Course GetCourses() {
-		return this.courses;
+    }
+	public List<Course> Courses
+    {
+		get { return courses; }
+		set { courses = value; }
 	}
-	public void SetCourses(ref Course courses) {
-		this.courses = courses;
-	}
-	public void AddCourse(ref Course course) {
+	public void AddCourse(Course course) {
 		throw new System.NotImplementedException("Not implemented");
 	}
-	public void DeleteCourse(ref Course course) {
+	public void DeleteCourse(Course course) {
 		throw new System.NotImplementedException("Not implemented");
 	}
-	public Lecturer(ref int ssNo, ref String name, ref String email) {
-		throw new System.NotImplementedException("Not implemented");
-	}
-
 }
