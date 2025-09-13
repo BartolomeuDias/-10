@@ -1,20 +1,24 @@
 using System;
 
 public class ResearchAssociate : Employee  {
-	private String fieldOfStudy;
-	private Project projects;
-
-	public String GetFieldOfStudy() {
-		return this.fieldOfStudy;
-	}
-	public void SetFieldOfStudy(ref String fieldOfStudy) {
+	private string fieldOfStudy;
+	private List<Project> projects;
+    public ResearchAssociate(int ssNo, string name, string email, string fieldOfStudy)
+    {
+        this.ssNo = ssNo;
+		this.name = name;
+		this.email = email;
 		this.fieldOfStudy = fieldOfStudy;
+    }
+	public string FieldOfStudy
+    {
+		get { return fieldOfStudy; }
+		set { fieldOfStudy = value; }
 	}
-	public Project GetProjects() {
-		return this.projects;
-	}
-	public void SetProjects(ref Project projects) {
-		this.projects = projects;
+	public List<Project> Projects
+    {
+		get { return projects; }
+		set { projects = value; }
 	}
 	public void StartProject(ref Project project) {
 		throw new System.NotImplementedException("Not implemented");
@@ -22,10 +26,4 @@ public class ResearchAssociate : Employee  {
 	public void FinishProject(ref Project project) {
 		throw new System.NotImplementedException("Not implemented");
 	}
-	public Research_associate(ref int ssNo, ref String name, ref String email) {
-		throw new System.NotImplementedException("Not implemented");
-	}
-
-	private Institute[] institutes;
-
 }
