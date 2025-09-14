@@ -5,13 +5,20 @@ public abstract class Employee {
     protected int ssNo;
     protected string name;
     protected string email;
-	protected int counter;
+	static int counter;
 
-	public int SsNo
+
+    protected Employee(string name, string email)
+    {
+        counter++;
+        this.ssNo = counter; 
+        this.name = name;
+        this.email = email;
+    }
+    public int SsNo
 	{
-		get { return ssNo; }
-		set { ssNo = value; }
-	}
+        get { return ssNo; }
+    }
 	public string Name
 	{
 		get { return name; }

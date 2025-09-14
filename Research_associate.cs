@@ -20,10 +20,10 @@ public class ResearchAssociate : Employee  {
 		get { return projects; }
 		set { projects = value; }
 	}
-	public void StartProject(ref Project project) {
+	public void StartProject(Project project) {
 		throw new System.NotImplementedException("Not implemented");
 	}
-	public void FinishProject(ref Project project) {
+	public void FinishProject(Project project) {
 		throw new System.NotImplementedException("Not implemented");
 	}
 }

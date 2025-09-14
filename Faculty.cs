@@ -2,17 +2,17 @@ using System;
 using System.Xml.Linq;
 
 public class Faculty {
-	private string dean;
+	private Dean dean;
 	private string name;
 	private List<Institute> institutes;
 
-    public Faculty(string name, string dean)
+    public Faculty(string name, Dean dean)
     {
         Dean = dean;
         Name = name;
         institutes = new List<Institute>();
     }
-	public string Dean
+	public Dean Dean
 	{
 		get { return dean; }
 		set { dean = value; }
@@ -34,6 +34,4 @@ public class Faculty {
 	public void RemoveInstitute(ref Institute institute) {
 		throw new System.NotImplementedException("Not implemented");
 	}
-
-
 }

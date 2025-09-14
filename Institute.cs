@@ -27,10 +27,4 @@ public class Institute {
 	public void SetEmployees(List<ResearchAssociate> employees) {
 		this.employees = employees;
 	}
-	public void HireEmployee(ResearchAssociate employee) {
-		throw new System.NotImplementedException("Not implemented");
-	}
-	public void FireEmployee(ResearchAssociate employee) {
-		throw new System.NotImplementedException("Not implemented");
-	}
 }
