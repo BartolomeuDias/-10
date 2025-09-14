@@ -6,7 +6,7 @@ public class Faculty {
 	private string name;
 	private List<Institute> institutes;
 
-    public Faculty(string dean, string name)
+    public Faculty(string name, string dean)
     {
         Dean = dean;
         Name = name;

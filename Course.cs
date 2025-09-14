@@ -6,6 +6,13 @@ public class Course {
     private string name;
     private float weeklyDuration;
 
+    public Course(int id, string name, float weeklyDuration)
+    {
+        Id = id;
+        Name = name;
+        WeeklyDuration = weeklyDuration;
+    }
+
     public int Id
     {
         get => id;

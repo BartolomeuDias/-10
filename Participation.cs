@@ -4,6 +4,12 @@ public class Participation {
 	private int hours;
 	private ResearchAssociate researchAssociate;
 	private Project project;
+	public Participation(int hours, ResearchAssociate researchAssociate, Project project)
+	{
+		Hours = hours;
+        ResearchAssociate = researchAssociate;
+		Project = project;
+	}
 	public int Hours
 	{
 		get { return hours; }

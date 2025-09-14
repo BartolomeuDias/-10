@@ -4,6 +4,12 @@ public class Project {
 	private string name;
 	private DateTime startDate;
 	private DateTime endDate;
+	public Project(string name, DateTime startDate, DateTime endDate)
+	{
+		Name = name;
+		StartDate = startDate;
+		EndDate = endDate;
+	}
 	public string Name
     {
 		get { return name; }
