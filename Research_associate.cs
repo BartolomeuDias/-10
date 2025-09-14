@@ -3,11 +3,8 @@ using System;
 public class ResearchAssociate : Employee  {
 	private string fieldOfStudy;
 	private List<Project> projects;
-    public ResearchAssociate(int ssNo, string name, string email, string fieldOfStudy)
+    public ResearchAssociate(string name, string email, string fieldOfStudy): base(name, email)
     {
-        this.ssNo = ssNo;
-		this.name = name;
-		this.email = email;
 		this.fieldOfStudy = fieldOfStudy;
     }
 	public string FieldOfStudy

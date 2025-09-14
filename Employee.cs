@@ -7,7 +7,6 @@ public abstract class Employee {
     protected string email;
 	static int counter;
 
-
     protected Employee(string name, string email)
     {
         counter++;

@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             University vsu = new University("ВГУ");
-            Faculty fcn = new Faculty("ФКН", "Крыловецкий Александр Абрамович");
+            Dean fcnDean = new Dean("Крыловецкий Александр Абрамович", "krilovetskiy@mail.ru");
+            Faculty fcn = new Faculty("ФКН", fcnDean);
 
             Institute infsys = new Institute("ИС", "к111");
             Institute dt = new Institute("ЦТ", "к222");
@@ -15,13 +16,13 @@
 
             fcn.SetInstitutes(new List<Institute> { infsys , dt , itu, tozi, piit});
 
-            ResearchAssociate ra1 = new ResearchAssociate(1, "Михаил Михаил Михайлович", "mihail@mail.ru", "Тензорный анализ в нейронных сетях");
-            ResearchAssociate ra2 = new ResearchAssociate(2, "Васильев Василий Васильевич", "bazil@mail.ru", "Исследование алгоритмов кодирования информации");
-            ResearchAssociate ra3 = new ResearchAssociate(3, "Петров Пётр Петрович", "peter@mail.ru", "Линейная алгебра в компьютерной графике");
+            ResearchAssociate ra1 = new ResearchAssociate("Михаил Михаил Михайлович", "mihail@mail.ru", "Тензорный анализ в нейронных сетях");
+            ResearchAssociate ra2 = new ResearchAssociate("Васильев Василий Васильевич", "bazil@mail.ru", "Исследование алгоритмов кодирования информации");
+            ResearchAssociate ra3 = new ResearchAssociate("Петров Пётр Петрович", "peter@mail.ru", "Линейная алгебра в компьютерной графике");
 
             infsys.SetEmployees(new List<ResearchAssociate> { ra1, ra2, ra3 });
 
-            Lecturer lecturer1 = new Lecturer(4, "Николаев Николай Николаевич", "nikolay@mail.ru", "Математический анализ");
+            Lecturer lecturer1 = new Lecturer("Николаев Николай Николаевич", "nikolay@mail.ru", "Математический анализ");
             Course course1 = new Course(256, "Матанализ", 6);
 
             Project proj1 = new Project("Внедрение нейронных сетей в компьютерную графику", new DateTime(2024, 1, 15), new DateTime(2025,1,15));

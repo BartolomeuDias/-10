@@ -2,7 +2,7 @@ using System;
 
 public class Lecturer : ResearchAssociate  {
 	private List<Course> courses;
-    public Lecturer(int ssNo, string name, string email, string fieldOfStudy):base(ssNo, name, email, fieldOfStudy)
+    public Lecturer(string name, string email, string fieldOfStudy):base(name, email, fieldOfStudy)
     {
 
     }

@@ -24,7 +24,7 @@
   <Class Name="Institute" Collapsed="true">
     <Position X="3.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAgAIAAQAAAIEgAACCAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAAAAAIAAQAAAIEAAACCAAAAAAAAAA=</HashCode>
       <FileName>Institute.cs</FileName>
     </TypeIdentifier>
   </Class>
