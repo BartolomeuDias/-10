@@ -30,7 +30,7 @@
             Participation participation1 = new Participation(100, ra1, proj1 );
 
             Console.WriteLine($"Университет: {vsu.Name}");
-            Console.WriteLine($"Факультет: {fcn.Name} Декан: {fcn.Dean}");
+            Console.WriteLine($"Факультет: {fcn.Name} Декан: {fcn.Dean.Name}");
             Console.WriteLine("Кафедры: \n");
             foreach(var institute in fcn.GetInstitutes())
             {
