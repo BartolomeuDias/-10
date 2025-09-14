@@ -2,17 +2,17 @@ using System;
 using System.Xml.Linq;
 
 public class Faculty {
-	private Employee dean;
+	private string dean;
 	private string name;
 	private List<Institute> institutes;
 
-    public Faculty(Employee dean, string name)
+    public Faculty(string dean, string name)
     {
         Dean = dean;
         Name = name;
         institutes = new List<Institute>();
     }
-	public Employee Dean
+	public string Dean
 	{
 		get { return dean; }
 		set { dean = value; }
