@@ -1,28 +1,27 @@
 using System;
 
 public class University {
-	private String name;
-	private Faculty faculties;
+	private string name;
+	private List<Faculty> faculties;
 
-	public String GetName() {
-		return this.name;
-	}
-	public void SetName(ref String name) {
+	public University(string name)
+	{
 		this.name = name;
 	}
-	public Faculty GetFaculties() {
-		return this.faculties;
+	public string Name
+    {
+		get { return name; }
+		set { name = value; }
 	}
-	public void SetFaculties(ref Faculty faculties) {
-		this.faculties = faculties;
+	public List<Faculty> Faculties
+    {
+		get { return faculties; }
+		set { faculties = value; }
 	}
-	public void AddFaculty(ref Faculty faculty) {
+	public void AddFaculty(Faculty faculty) {
 		throw new System.NotImplementedException("Not implemented");
 	}
-	public void RemoveFaculty(ref Faculty faculty) {
+	public void RemoveFaculty(Faculty faculty) {
 		throw new System.NotImplementedException("Not implemented");
 	}
-
-	private Faculty[] facultys;
-
 }
